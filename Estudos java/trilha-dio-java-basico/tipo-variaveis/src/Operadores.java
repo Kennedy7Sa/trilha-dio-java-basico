@@ -26,14 +26,16 @@ public class Operadores {
 
 
         //*** x repetição usar operadores de interarção
-        int numero = 5;
+        //int numero = 5;
         //numero++;
        // System.out.println(numero);
         //no caso abaixo vamos somar incrementar 1
        // System.out.println(++ numero);
 
         //aqui vamos decrementar
-        System.out.println(numero --);
+       // System.out.println(numero --);
+
+
 
 
     }
