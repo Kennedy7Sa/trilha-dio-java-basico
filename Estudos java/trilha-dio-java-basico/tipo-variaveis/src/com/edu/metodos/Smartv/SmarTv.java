@@ -1,4 +1,4 @@
-package com.edu.metodos;
+package com.edu.metodos.Smartv;
 
 public class SmarTv {
     boolean ligada = false;
