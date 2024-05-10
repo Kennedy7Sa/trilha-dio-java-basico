@@ -1,3 +1,5 @@
+package javBasico;
+
 public class OperadoresRelacionais {
 
     public static void main(String[] args) {

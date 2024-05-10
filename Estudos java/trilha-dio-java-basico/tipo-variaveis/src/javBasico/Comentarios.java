@@ -1,3 +1,5 @@
+package javBasico;
+
 public class Comentarios {
     //ola eu sou um comentario de uma unica linha
 

@@ -1,6 +1,8 @@
+package javBasico;
+
 /**
- * <h1>Calculadora</h1>
- * A Calculadora realiza operações matemáticas entre números inteiros
+ * <h1>javBasico.Calculadora</h1>
+ * A javBasico.Calculadora realiza operações matemáticas entre números inteiros
  * <p>
  * <b>Note:</b> Leia atentamente a documentação desta classes
  * para desfrutar dos recursos oferecidos pelo autor
