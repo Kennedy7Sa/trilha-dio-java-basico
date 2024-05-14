@@ -22,7 +22,7 @@ public class PlanoOperadora {
             case "B": {
                 System.out.println("100 minutos de ligação");
                 //nesse caso como não colocado o break se a escolha for alem do primeiro case
-                //o app vai imprimir todos os cases anteriores 
+                //o app vai imprimir todos os cases anteriores
             }
         }
 
