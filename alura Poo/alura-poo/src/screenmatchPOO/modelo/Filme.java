@@ -1,24 +1,29 @@
-package screenmatchPOO;
+package screenmatchPOO.modelo;
 
 public class Filme {
     String nome ;
     int anoDeLancamento;
     boolean incluidoNoPlano;
-    double somaDasAvaliacoes;
-    int totalAvaliacoes;
+    private  double somaDasAvaliacoes;
+    private int totalAvaliacoes;
     int duracaoEmMinutos;
 
+    public int getTotalAvaliacoes(){
+        return totalAvaliacoes;
+    }
+
+
     //metodo
-    void exibeFichaTecnica(){
+    public void exibeFichaTecnica(){
         System.out.println(String.format("o nome do filme %s",nome));
         System.out.println(String.format("Ano de lançamento é %d",anoDeLancamento));
     }
-    void avalia(double nota){
+     public void avalia(double nota){
         somaDasAvaliacoes += nota;
         totalAvaliacoes++;
     }
-    double pegaMedia(){
-        return somaDasAvaliacoes/totalAvaliacoes;
+    public double pegaMedia(){
+         return somaDasAvaliacoes/totalAvaliacoes;
 
     }
 }
