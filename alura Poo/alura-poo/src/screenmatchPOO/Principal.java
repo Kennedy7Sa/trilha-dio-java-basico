@@ -5,6 +5,8 @@ import screenmatchPOO.calculos.FiltroRecomendacao;
 import screenmatchPOO.modelo.Filme;
 import screenmatchPOO.modelo.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
@@ -45,6 +47,19 @@ public class Principal {
         FiltroRecomendacao filtro = new FiltroRecomendacao();
         filtro.filtra(meuFilme);
 
+        Filme filmeDoPaulo = new Filme();
+        filmeDoPaulo.setNome("007");
+        filmeDoPaulo.setDuracaoEmMinutos(200);
+        filmeDoPaulo.setAnoDeLancamento(2023);
+        filmeDoPaulo.avalia(10);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(outroFilme);
+        listaDeFilmes.add(filmeDoPaulo);
+        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+        System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
+        System.out.println();
         }
 
 
