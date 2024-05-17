@@ -1,29 +1,21 @@
 package screenmatchPOO.modelo;
 
-public class Filme {
-    String nome ;
-    int anoDeLancamento;
-    boolean incluidoNoPlano;
-    private  double somaDasAvaliacoes;
-    private int totalAvaliacoes;
-    int duracaoEmMinutos;
+import screenmatchPOO.calculos.Classificavel;
 
-    public int getTotalAvaliacoes(){
-        return totalAvaliacoes;
+public class Filme extends Titulo implements Classificavel {
+    private String diretor;
+
+    public String getDiretor() {
+        return diretor;
     }
 
-
-    //metodo
-    public void exibeFichaTecnica(){
-        System.out.println(String.format("o nome do filme %s",nome));
-        System.out.println(String.format("Ano de lançamento é %d",anoDeLancamento));
+    public void setDiretor(String diretor) {
+        this.diretor = diretor;
     }
-     public void avalia(double nota){
-        somaDasAvaliacoes += nota;
-        totalAvaliacoes++;
-    }
-    public double pegaMedia(){
-         return somaDasAvaliacoes/totalAvaliacoes;
 
+    @Override
+    public int getClassificacao() {
+        return (int) pegaMedia() / 2;
     }
 }
+
